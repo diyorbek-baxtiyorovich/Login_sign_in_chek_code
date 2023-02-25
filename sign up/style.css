@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #FAF9F6;
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.box{
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 20px 30px;
+}
+
+/* head_navbar */
+
+.head_navbar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.head_navbar .img_template{
+    width: 50%;
+}
+
+.head_navbar .img_template img{
+    width: 40%;
+}
+.iconst i{
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+/* login_section */
+
+.login_section{
+    width: 100%;
+    height: auto;
+}
+
+.login_section h1{
+    font-size: 22px;
+}
+
+/* input_login */
+
+.Forma{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+.name .input_name label input{
+    width: 90%;
+    color: #000;
+    padding: 13px 20px;
+    border-radius: 10px;
+    outline: none;
+    border: 0.5px solid ;
+    box-shadow: 0 0 4px 4px #dddddd;
+    margin: 10px 7px;
+}
+.name .input_name label{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.full_name .input_fullName label input, .email .input_email label input, .CreatPas .input_password  label input, .ConfrimPas .input_Cpassword label input{
+    width: 90%;
+    color: #000;
+    padding: 13px 20px;
+    border-radius: 10px;
+    outline: none;
+    border: 0.5px solid ;
+    box-shadow: 0 0 4px 4px #dddddd;
+    margin: 5px 7px;
+}
+
+
+.full_name .input_fullName label p, .email .input_email label p, .CreatPas .input_password  label p, .ConfrimPas .input_Cpassword label p{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.error{
+    display: flex;
+    font-size: 14px;
+    color: red;
+}
+
+.error i{
+    margin-top: 3px;
+    margin-right: 5px;
+}
+/* block_divrent */
+
+
+.block_divrent{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.block_divrent .divrent-one{
+    width: calc(100% / 5);
+    height: 5px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #dddddd;
+    opacity: 0.5;
+} 
+.block_divrent .divrent-one:first-child{
+    margin-left: 0;
+}
+
+
+/* btn */
+
+.btn input{
+    width: 100%;
+    padding: 10px 0;
+    background-color: black;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.btn input{
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.creat-acc{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 14px;
+}
+
+.creat-acc p{
+    color: #746f6f;
+    font-size: 14px;
+}
+
+.creat-acc p a{
+    color: #000;
+    font-weight: 900;
+}
+
+.email-error, .creat-error, .confirm-error{
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    color: red;
+    display: none;
+}
+
+@media only screen and (max-width: 1140px){
+    .container{
+        width: 100%;
+    }
+}

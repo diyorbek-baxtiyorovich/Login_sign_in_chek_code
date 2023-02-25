@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Your email</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="head_navbar">
+                <div class="img_template">
+                    <!-- <img src="./img/ortal-kombat-11-logo-0F830F6176-seeklogo.com.png" alt="Mr bend"> -->
+                </div>
+                <div class="iconst">
+                    <!-- <i class="fa-solid fa-signal"></i> -->
+                </div>
+            </div>
+            <h1>Plase check your email</h1>
+            <p>We've sent a code to <span>hello@oliviarhye.com</span></p>
+            <div class="input_block-code">
+                <div class="code-blocks">
+                    <input type="text" maxlength="1" name="" class="input" id="" placeholder="1">
+                </div>
+                <div class="code-blocks">
+                    <input type="text" maxlength="1" name="" class="input" id="" placeholder="2">
+                </div>
+                <div class="code-blocks">
+                    <input type="text" maxlength="1" name="" class="input" id="" placeholder="3">
+                </div>
+                <div class="code-blocks">
+                    <input type="text" maxlength="1" name="" class="input" id="" placeholder="4">
+                </div>
+                <div class="code-blocks">
+                    <input type="text" maxlength="1" name="" class="input" id="" placeholder="5">
+                </div>
+                <div class="code-blocks">
+                    <input type="text" maxlength="1" name="" class="input" id="" placeholder="6">
+                </div>
+            </div>
+            <p>Didn't get a code? <a href="#">Click to resend.</a></p>
+            <div class="buttom_click">
+                <div class="cancel">
+                    <a href="#">Cancel</a>
+                </div>
+                <div class="verify">
+                    <a href="#">Verify</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let inputs = document.querySelectorAll("input");
+
+        inputs[0].addEventListener('keyup', inputKeyDown);
+        inputs[1].addEventListener('keyup', inputKeyDown);
+        inputs[2].addEventListener('keyup', inputKeyDown);
+        inputs[3].addEventListener('keyup', inputKeyDown);
+        inputs[4].addEventListener('keyup', inputKeyDown);
+        inputs[5].addEventListener('keyup', inputKeyDown);
+        // next element active 
+        function inputKeyDown(e) {
+            let key = e.keyCode || e.charCode;
+
+            inputs.forEach(element => {
+                let next = Number(e.target.placeholder);
+
+                if( key == 8 ){             //|| key == 46 ){
+                    inputs[next-2].focus();
+                    return;
+                }
+
+                if(next!=inputs.length)
+                    inputs[next].focus();
+            });
+        }
+    </script>
+</body>
+</html>

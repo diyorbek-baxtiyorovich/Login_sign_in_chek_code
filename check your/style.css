@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #FAF9F6;
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+    height: 100%;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 30px;
+}
+
+/* header navbar */
+
+.head_navbar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.head_navbar .img_template{
+    width: 50%;
+}
+
+.head_navbar .img_template img{
+    width: 40%;
+}
+.iconst i{
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+/*_section */
+
+.box h1{
+    font-size: 22px;
+}
+
+.box p:nth-child(3){
+    color: #464343;
+    opacity: 0.7;
+    font-size: 15px;
+    font-weight: 200;
+    margin: 10px 0;
+}
+
+.box p:nth-child(5){
+    color: #464343;
+    opacity: 0.7;
+    font-size: 15px;
+    font-weight: 200;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.box p:nth-child(5) a{
+    color: #272525;
+}
+/* input block code */
+
+.input_block-code{
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.input_block-code .code-blocks input{
+    width: 50px;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 28px;
+    text-align: center;
+    border: 1px solid #464343;
+    outline: none;
+}
+
+/* buttom_click */
+
+.buttom_click{
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttom_click .cancel a, .verify a{
+    padding: 13px 55px;
+    border: 1px solid #877d7d;
+    border-radius: 10px;
+    color: #272525;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.buttom_click .verify a{
+    background-color: rgb(16, 3, 71);
+    color: #fff;
+}
